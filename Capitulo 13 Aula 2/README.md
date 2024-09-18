@@ -1,0 +1,1 @@
+Representação de cores por nome, hexadecimal, RGB e HLS
