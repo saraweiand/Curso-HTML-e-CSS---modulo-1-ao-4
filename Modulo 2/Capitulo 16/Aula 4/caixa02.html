@@ -19,6 +19,8 @@
         nav{
             background-color: lightgray;
             padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); /* horizontal, vertical, espelhamento e sombra */
+                                                            /* INSET = para sombra aparecer "afundada" */
         }
 
         nav > a{
@@ -32,6 +34,7 @@
             background-color: white;
             padding: 10px;
             margin: 10px;
+            border-radius: 10px 40px;
         }
 
         article{
@@ -47,8 +50,20 @@
             background-color: black;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 4px;
             margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -80,5 +95,6 @@
     <footer> <!--Rodapé-->
         <p>Desenvolvido pelo CursoemVideo</p>
     </footer>
+    <div id="bola"></div>
 </body>
 </html>
