@@ -1,0 +1,14 @@
+@charset "8-UTF";
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('fontes/BebasKai.otf') format('opentype');
+}
+
+header{
+    font-family: 'BebasKai', Arial, Helvetica, sans-serif;
+    }
+
+header > h1, header p{
+    text-align: center;
+}
