@@ -17,7 +17,6 @@ body{
 header{
     font-family: 'BebasKai', Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #39CD7B, #195935);
-    box-shadow: 1px 0px 4px 1px black;
 }
 
 header > h1{
@@ -57,23 +56,25 @@ main{
 }
 
 article{
-    margin: 0px 270px 0px 270px;
+    margin: 0px 180px 0px 180px;
     background-color: white;
     padding: 0px 20px 0px 20px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 48px 1px rgba(0, 0, 0, 0.596);
 }
 
 article > h1{
     margin-top: 0px;
     padding-top: 25px;
-    font-size: 30px;
+    font-size: 28px;
     color: rgb(0, 82, 0);
 }
 
 article > h2{
     color: rgb(0, 107, 0);
     background: linear-gradient(to right, rgb(200, 350, 215), rgb(255, 255, 255));
+    font-size: 22px;
 }
 
 article > p{
@@ -95,4 +96,82 @@ b > a{
 
 b{
     color: #42795B;
+}
+
+picture > img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+aside{
+    background-color: rgb(0, 63, 0);
+    padding: 30px;
+}
+
+aside > iframe{
+    width: 96%;
+    margin: auto;
+    display: block;
+}
+
+.mais{
+    padding-top: 20px;
+}
+
+article > h3{
+    background-color: #2FA866;
+    margin-bottom: 0px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.616);
+}
+
+.mais > p{
+    background-color: #C5EBD6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+ul{
+    background-color: #C5EBD6;
+    margin-top: 0px;
+}
+
+.acesse{
+    border-radius: 0px 0px 10px 10px;
+}
+
+section{
+    padding-bottom: 20px;
+}
+
+section > p{
+    margin: 0px 180px 0px 180px;
+    background-color: white;
+    padding: 20px 20px 0px 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+}
+
+.entao{
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 30px;
+}
+
+footer > p{
+    text-align: center;
+    background-color: #1A5C38;
+    margin: 0px;
+    padding: 15px;
+    color: white;
+}
+
+.foo{
+    color: white;
 }
