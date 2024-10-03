@@ -1,177 +1,204 @@
 @charset "8-UTF";
 
-@font-face {
-    font-family: 'Bebas';
-    src: url('fontes/BebasKai.otf') format('opentype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
-    font-family: 'Idroid';
-    src: url('fontes/idroid.otf') format('opentype');
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
 }
 
-body{
+:root{ /* Variável global */
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+*{
+    padding: 0px;
     margin: 0px;
 }
 
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
 header{
-    font-family: 'BebasKai', Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #39CD7B, #195935);
-}
-
-header > h1{
-    margin-top: 0px;
-    padding-top: 30px;
-}
-
-header > p{
-    padding-top: 10px;
-}
-
-header > h1, header > p{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
     text-align: center;
-    color: white;
+    padding-top: 40px;
 }
 
-header > nav{
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-bottom: 10px;
+header h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
     word-spacing: 15px;
 }
 
 nav > a{
-    text-decoration: none;
     color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 13px;
+    transition-duration: .5s;
 }
 
-.fale_conosco{
-    word-spacing: 0px;
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main{
-    background-color: #84E1AD;
-}
-
-article{
-    margin: 0px 180px 0px 180px;
-    background-color: white;
-    padding: 0px 20px 0px 20px;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0px 0px 48px 1px rgba(0, 0, 0, 0.596);
-}
-
-article > h1{
-    margin-top: 0px;
-    padding-top: 25px;
-    font-size: 28px;
-    color: rgb(0, 82, 0);
-}
-
-article > h2{
-    color: rgb(0, 107, 0);
-    background: linear-gradient(to right, rgb(200, 350, 215), rgb(255, 255, 255));
-    font-size: 22px;
-}
-
-article > p{
-    text-indent: 20px;
-}
-
-article > h1, article > h2{
-    font-family: 'Idroid', Arial, Helvetica, sans-serif;
-}
-
-b > a{
-    text-decoration: none;
-    color: #42795B;
-}
-
-.mais > h3{
-    margin-top: 0px;
-}
-
-b{
-    color: #42795B;
-}
-
-picture > img{
-    max-width: 100%;
-    height: auto;
+    min-width: 300px;
+    max-width: 1000px;
     margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 10px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
     display: block;
+    margin: auto;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside{
-    background-color: rgb(0, 63, 0);
-    padding: 30px;
-}
-
-aside > iframe{
-    width: 96%;
-    margin: auto;
-    display: block;
-}
-
-.mais{
-    padding-top: 20px;
-}
-
-article > h3{
-    background-color: #2FA866;
-    margin-bottom: 0px;
+    background-color: var(--cor1);
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3{
+    background-color: var(--cor4);
     color: white;
-    font-weight: bold;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
-    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.616);
 }
 
-.mais > p{
-    background-color: #C5EBD6;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px;
+aside ul{
+    list-style-type: '\1F5F8\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 
-ul{
-    background-color: #C5EBD6;
-    margin-top: 0px;
-}
-
-.acesse{
-    border-radius: 0px 0px 10px 10px;
-}
-
-section{
-    padding-bottom: 20px;
-}
-
-section > p{
-    margin: 0px 180px 0px 180px;
-    background-color: white;
-    padding: 20px 20px 0px 20px;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 20px;
-}
-
-.entao{
-    border-radius: 0px 0px 10px 10px;
-    padding-bottom: 30px;
-}
-
-footer > p{
+footer {
+    background-color: var(--cor5);
+    color: white;
     text-align: center;
-    background-color: #1A5C38;
-    margin: 0px;
-    padding: 15px;
-    color: white;
+    font-size: 0.8em;
+    padding: 5px;
 }
 
-.foo{
+footer a{
     color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
