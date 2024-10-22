@@ -1,0 +1,30 @@
+@charset "8-UTF";
+
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Permanent+Marker&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Boogaloo", sans-serif;
+}
+
+header{
+    padding: 60px;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+main{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6{
+    margin-bottom: 100px;
+    letter-spacing: 3px;
+    line-height: 64px;
+}
