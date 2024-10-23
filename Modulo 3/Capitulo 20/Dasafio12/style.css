@@ -7,65 +7,84 @@
     margin: 0px;
     padding: 0px;
     font-family: "Boogaloo", sans-serif;
+    font-size: 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header{
-    padding: 60px;
-    text-align: center;
-    font-size: 40px;
     background-color: black;
     color: white;
+    text-align: center;
 }
 
-main{
-    margin-top: 100px;
-    font-size: 40px;
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+header > p{
+    padding-bottom: 50px;
 }
 
-.p1, .p2, .p3, .p4, .p5, .p6, .p7{
-    margin-bottom: 100px;
-    letter-spacing: 3px;
-    line-height: 64px;
-    margin-left: 100px;
-}
-
-.p2{
-    margin-left: 0px;
-    background-image: url(pacote-d012/imagens/background001.jpg);
-    height: 80vh;
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    padding-top: 131px;
-    border-top: 3px solid rgba(0, 0, 0, 0.425);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.425);
-}
-
-.p5{
-    margin-left: 0px;
-    background-image: url(pacote-d012/imagens/background002.jpg);
-    height: 80vh;
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    padding-top: 131px;
-    border-top: 3px solid rgba(0, 0, 0, 0.425);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.425);
-}
-
-.paragrafo{
-    margin-left: 60px;
-    padding: 50px 50px 50px 50px;
-    background-color: rgba(0, 0, 0, 0.315);
-    display: inline-block;
+header a, footer a{
     color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: gray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url('../Dasafio12/pacote-d012/imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../Dasafio12/pacote-d012/imagens/background002.jpg');
 }
 
 footer{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     color: white;
     background-color: black;
 }
