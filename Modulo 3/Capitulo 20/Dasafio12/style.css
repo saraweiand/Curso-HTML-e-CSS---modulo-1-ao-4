@@ -19,7 +19,6 @@ header{
 
 main{
     margin-top: 100px;
-    margin-left: 30px;
     font-size: 40px;
 }
 
@@ -27,4 +26,21 @@ main{
     margin-bottom: 100px;
     letter-spacing: 3px;
     line-height: 64px;
+    margin-left: 90px;
+}
+
+.p2{
+    margin-left: 0px;
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    height: 80vh;
+    background-attachment: scroll;
+    padding-top: 131px;
+}
+
+.paragrafo{
+    margin-left: 90px;
+    background-color: rgba(0, 0, 0, 0.24);
+    display: inline-block;
+    padding: 20px;
+    color: white;
 }
