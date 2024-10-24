@@ -13,3 +13,12 @@ Todas as tabelas de HTML tem a seguinte hierarquia (grande):<br>
             TR, TD, TH<br>
         TFOOT (footer)<br>
             TR, TD, TH<br>
+<br>
+<br>
+ODD: vai fazer as células ímpares ficarem cinza (2n-1)<br>
+EVEN: vai fazer as células pares ficarem cinzan(2n)<br>
+<br>
+<br>
+tbody > tr:nth-child(2n)<br>
+De duas em duas ele vai colocando uma target cinza<br>
+overflow-x: auto; Conteúdo que transborda
