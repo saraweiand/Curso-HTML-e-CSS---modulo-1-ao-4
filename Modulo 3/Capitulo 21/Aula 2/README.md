@@ -6,6 +6,7 @@ TABLE = tabela<br>
 
 Todas as tabelas de HTML tem a seguinte hierarquia (grande):<br>
     TABLE<br>
+        CAPTION (legenda)<br>
         THEAD (cabeça)<br>
             TR, TD, TH<br>
         TBODY (corpo)<br>
