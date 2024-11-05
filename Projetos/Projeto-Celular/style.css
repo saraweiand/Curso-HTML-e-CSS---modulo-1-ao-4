@@ -1,8 +1,13 @@
 @charset "8-UTF";
 
 body{
-    background-image: url('../Projeto-celular/pacote-d013/pacote-d013/imagens/fundo-madeira.jpg');
+    background-image: url('../Projeto-Celular/pacote-d013/pacote-d013/imagens/fundo-madeira.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+header > nav.img1{
+    background-image: url('../Projeto-Celular/pacote-d013/pacote-d013/imagens/logo-facebook.jpg');
+    background-size: 100vw;
 }
