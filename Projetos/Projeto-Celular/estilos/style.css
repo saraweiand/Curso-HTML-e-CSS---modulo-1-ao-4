@@ -1,0 +1,84 @@
+@charset "8-UTF";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+*/
+
+body{
+    background: url('../pacote-d013/pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; /* Imagem deve preencher todo o fundo onde foi aplicada */
+    background-attachment: fixed; /* Imagem deve ou não rolar com o conteúdo da página */
+}
+
+main{
+    position: relative; /* Elemento usa seu próprio canto para referenciar a sua posição */
+    height: 100vh;
+    z-index: 1;
+}
+
+section#telefone{
+    position: absolute; /* Posiciona a imagem em relação ao ponto superior esquerdo do elemnto pai */
+    top: 50%; /* Posição da imagem em relação a tela */
+    left: 50%; /* Posição da imagem em relação a tela */
+    transform: translate(-50%, -50%); /* Posiciona o elemento vertical e/ou horizontalmente (no caos verical e horizontal) */
+    z-index: 1;
+
+    height: 627px; 
+    width: 311px; 
+    background: url('../pacote-d013/pacote-d013/imagens/frame-iphone.png') no-repeat;
+}
+
+aside#tela_inicial{
+    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat;
+    background-size: cover; 
+    position: absolute;
+    top: 12%; 
+    left: 7%; 
+    z-index: 2;
+
+    width: 87%; 
+    height: 76%; 
+}
+
+section#redes-sociais{
+    position: absolute;
+    top: 50%; 
+    right: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+aside#home {
+    background: url('../pacote-d013/pacote-d013/imagens/logo-home.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 12%; 
+    left: 7%;
+    /*transform: translate(578px, -300px); Iria usar 567% e 500%, porém quando forem valores muito altos em % deve-se utilizar px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    
+    width: 85px; /* Alterado de % para px, pois não estava sendo apresentado em tela */
+    height: 85px;
+    border-radius: 50%;
+    z-index: 4; /* Garantir que está acima dos outros elementos */
+}
+
+aside#home:hover{
+    box-shadow: 0px 4px 15px black;
+    transform: rotateX(15deg) rotateY(15deg) translate(578px, -300px);
+}
+
+
+
+
