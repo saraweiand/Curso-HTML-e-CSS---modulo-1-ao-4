@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho dos elementos */
 }
 
 /* 
@@ -18,24 +19,25 @@ body{
     background: url('../pacote-d013/pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover; /* Imagem deve preencher todo o fundo onde foi aplicada */
     background-attachment: fixed; /* Imagem deve ou não rolar com o conteúdo da página */
+    overflow: hidden; /* Remove qualquer barra de rolagem extra */
 }
 
 main{
     position: relative; /* Elemento usa seu próprio canto para referenciar a sua posição */
+    display: flex; /* Centraliza os elementos dentro de main */
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     z-index: 1;
 }
 
 section#telefone{
-    position: absolute; /* Posiciona a imagem em relação ao ponto superior esquerdo do elemnto pai */
-    top: 50%; /* Posição da imagem em relação a tela */
-    left: 50%; /* Posição da imagem em relação a tela */
-    transform: translate(-50%, -50%); /* Posiciona o elemento vertical e/ou horizontalmente (no caos verical e horizontal) */
-    z-index: 1;
-
+    position: relative; /* Posiciona a imagem em relação ao ponto superior esquerdo do elemnto pai */
     height: 627px; 
     width: 311px; 
     background: url('../pacote-d013/pacote-d013/imagens/frame-iphone.png') no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
 
 aside#tela_inicial{
@@ -44,52 +46,67 @@ aside#tela_inicial{
     position: absolute;
     top: 12%; 
     left: 7%; 
-    z-index: 2;
+    overflow-y: auto; /* permite o rolamento apenas dentro dele */
 
     width: 87%; 
     height: 76%; 
+    z-index: 2;
 }
 
+.tela{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.tela:target{
+    display: block;
+}
+
+/* Exibe a tela inicial por padrão */
+#home {
+    display: block;
+}
+
+/*
+    position: absolute foi alterado pelo display: flex, pois assim posso organizar os ícones dinamicamente
+*/
 section#redes-sociais{
     position: absolute;
-    top: 50%; 
-    right: 50%; 
-    transform: translate(-50%, -50%);
+    top: 10px;
+    right: 10px;
+    display: flex; /* Alinha os ícones em linha */
+    flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro) */
+    gap: 10px; /* Espaçamento entre os ícones */
     z-index: 3;
 }
 
+/* Estilos específicos de cada ícone */
 aside#home {
-    background: url('../pacote-d013/pacote-d013/imagens/logo-home.jpg') no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    left: 860px;
-    top: -300px;
- 
-    width: 85px; /* Alterado de % para px, pois não estava sendo apresentado em tela */
-    height: 85px;
-    border-radius: 50%;
-    z-index: 4; /* Garantir que está acima dos outros elementos */
+    background: url('../pacote-d013/pacote-d013/imagens/logo-home.jpg') no-repeat;
 }
 
-aside#home:hover{
+aside#github {
+    background: url('../pacote-d013/pacote-d013/imagens/logo-github.jpg') no-repeat;
+}
+
+aside#youtube {
+    background: url('../pacote-d013/pacote-d013/imagens/logo-youtube.jpg') no-repeat;
+}
+
+aside#home, aside#github, aside#youtube {
+    background-size: cover;
+    background-position: center;
+    width: 60px; /* Tamanho fixo */
+    height: 60px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+
+    
+}
+
+/* Efeito hover */
+aside#home:hover, aside#github:hover, aside#youtube:hover {
     box-shadow: 0px 4px 15px black;
 }
-
-aside#home {
-    background: url('../pacote-d013/pacote-d013/imagens/logo-home.jpg') no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    left: 860px;
-    top: -300px;
- 
-    width: 85px; /* Alterado de % para px, pois não estava sendo apresentado em tela */
-    height: 85px;
-    border-radius: 50%;
-    z-index: 4; /* Garantir que está acima dos outros elementos */
-}
-
-aside#home:hover{
-    box-shadow: 0px 4px 15px black;
-}
-
-
