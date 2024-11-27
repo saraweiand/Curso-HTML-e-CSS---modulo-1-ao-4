@@ -42,7 +42,7 @@ section#telefone{
 
 aside#tela_inicial{
     background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat;
-    position: relative;
+    position: absolute;
     background-size: cover;
     top: 12%; 
     left: 7%; 
@@ -67,30 +67,40 @@ section#redes-sociais{
 
 /* Estilo das outras telas */
 .estilo_telas{
+    display: none; /* Todas as telas ficam escondidas inicialmente */
     top: 12%; 
-    left: 7%; 
+    left: 7%;
+    position: absolute;
 
     width: 269px;
     height: 477px;
+    z-index: 2; /* Colocar as telas acima do fundo */
 }
 
 /* Imagem das outras telas no celular */
 #home_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat;
-    position: absolute;
+    display: block;
+    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat center;
     background-size: cover;
 }
 
 #github_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/tela-github.jpg') no-repeat;
-    position: absolute;
+    background: url('../pacote-d013/pacote-d013/imagens/tela-github.jpg') no-repeat center;
     background-size: cover;
+     background-attachment: scroll;
+    
 }
 
 #youtube_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/logo-youtube.jpg') no-repeat;
-    position: absolute;
+    background: url('../pacote-d013/pacote-d013/imagens/logo-youtube.jpg') no-repeat center;
     background-size: cover;
+}
+
+/* Exibir tela quando for alvo (:target) */
+#home_tela:target,
+#github_tela:target,
+#youtube_tela:target {
+    display: block; /* Exibe a tela que é alvo */
 }
 
 /* Design dos botões */
