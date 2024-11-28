@@ -96,7 +96,7 @@ section#redes-sociais{
 /* Exibir tela quando for alvo (:target) */
 #github_tela:target,
 #youtube_tela:target {
-    display: block; /* Exibe a tela que é alvo */
+    display: block; /* Exibe a tela que é alvo  */
 }
 
 /* Design dos botões */
