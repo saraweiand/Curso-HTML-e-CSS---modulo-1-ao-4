@@ -80,6 +80,7 @@ section#redes-sociais{
     position: absolute;
     width: 269px;
     height: 478px;
+    overflow-y: auto
 }
 
 #youtube_tela {
@@ -90,7 +91,8 @@ section#redes-sociais{
     left: 21px;
     position: absolute;
     width: 269px;
-    height: 478px;
+    height: 909px;
+    overflow-y: auto
 }
 
 /* Exibir tela quando for alvo (:target) */
