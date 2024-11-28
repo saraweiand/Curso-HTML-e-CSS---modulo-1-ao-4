@@ -40,18 +40,6 @@ section#telefone{
     z-index: 1;
 }
 
-aside#tela_inicial{
-    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat;
-    position: absolute;
-    background-size: cover;
-    top: 12%; 
-    left: 7%; 
-
-    width: 269px;
-    height: 477px;
-    z-index: 2;
-}
-
 /*
     position: absolute foi alterado pelo display: flex, pois assim posso organizar os ícones dinamicamente
 */
@@ -68,36 +56,44 @@ section#redes-sociais{
 /* Estilo das outras telas */
 .estilo_telas{
     display: none; /* Todas as telas ficam escondidas inicialmente */
-    top: 12%; 
-    left: 7%;
-    position: absolute;
-
-    width: 269px;
-    height: 477px;
     z-index: 2; /* Colocar as telas acima do fundo */
 }
 
 /* Imagem das outras telas no celular */
 #home_tela {
     display: block;
-    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat center;
+    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat;
     background-size: cover;
+    top: 12.8%;
+    left: 7%;
+    position: absolute;
+    width: 267px;
+    height: 477px;
 }
 
 #github_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/tela-github.jpg') no-repeat center;
+    background: url('../pacote-d013/pacote-d013/imagens/tela-github.jpg') no-repeat;
     background-size: cover;
-     background-attachment: scroll;
-    
+    background-attachment: scroll;
+    top: 80px;
+    left: 21px;
+    position: absolute;
+    width: 269px;
+    height: 478px;
 }
 
 #youtube_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/logo-youtube.jpg') no-repeat center;
+    background: url('../pacote-d013/pacote-d013/imagens/tela-youtube.png') no-repeat;
     background-size: cover;
+    background-attachment: scroll;
+    top: 80px;
+    left: 21px;
+    position: absolute;
+    width: 269px;
+    height: 478px;
 }
 
 /* Exibir tela quando for alvo (:target) */
-#home_tela:target,
 #github_tela:target,
 #youtube_tela:target {
     display: block; /* Exibe a tela que é alvo */
