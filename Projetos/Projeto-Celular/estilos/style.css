@@ -1,128 +1,33 @@
-@charset "8-UTF";
+@charset "UTF-8";
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho dos elementos */
 }
 
-/* 
 html, body{
-    height: 100vh;
     width: 100vw;
-    background-color: black;
+    height: 100vh;
 }
-*/
 
 body{
-    background: url('../pacote-d013/pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
-    background-size: cover; /* Imagem deve preencher todo o fundo onde foi aplicada */
-    background-attachment: fixed; /* Imagem deve ou não rolar com o conteúdo da página */
-    overflow: hidden; /* Remove qualquer barra de rolagem extra */
+    background: url('../pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main{
-    position: relative; /* Elemento usa seu próprio canto para referenciar a sua posição */
-    display: flex; /* Centraliza os elementos dentro de main */
-    align-items: center;
-    justify-content: center;
+    position: relative;
     height: 100vh;
-    z-index: 1;
 }
 
 section#telefone{
-    position: relative; /* Posiciona a imagem em relação ao ponto superior esquerdo do elemnto pai */
-    height: 627px; 
-    width: 311px; 
-    background: url('../pacote-d013/pacote-d013/imagens/frame-iphone.png') no-repeat;
-    background-size: cover;
-    z-index: 1;
-}
-
-aside#tela_inicial{
-    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat;
-    position: relative;
-    background-size: cover;
-    top: 12%; 
-    left: 7%; 
-
-    width: 269px;
-    height: 477px;
-    z-index: 2;
-}
-
-/* Exibe a tela inicial por padrão */
-
-#tela_inicial{
-    display: block;
-}
-
-/*
-    position: absolute foi alterado pelo display: flex, pois assim posso organizar os ícones dinamicamente
-*/
-section#redes-sociais{
     position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex; /* Alinha os ícones em linha */
-    flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro) */
-    gap: 10px; /* Espaçamento entre os ícones */
-    z-index: 3;
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-/* Estilo das outras telas */
-
-#outras_telas{
-    position: absolute;
-    top: 12%;
-}
-
-/* Imagem das outras telas no celular */
-#home_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/tela-home.jpg') no-repeat;
-    position: relative;
-    background-size: cover;
-    top: 12%; 
-    left: 7%; 
-
-    width: 269px;
-    height: 477px;
-}
-
-#github_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/tela-github.jpg') no-repeat;
-    position: relative;
-    background-size: cover;
-    top: 12%; 
-    left: 7%; 
-
-}
-
-#youtube_tela {
-    background: url('../pacote-d013/pacote-d013/imagens/logo-youtube.jpg') no-repeat;
-    position: relative;
-    background-size: cover;
-    top: 12%; 
-    left: 7%; 
-
-    width: 269px;
-    height: 477px;
-}
-
-/* Design dos botões */
-
-.estilo_botoes {
-    background-size: cover;
-    background-position: center;
-    width: 60px; /* Tamanho fixo */
-    height: 60px;
-    border-radius: 50%;
-    transition: box-shadow 0.3s ease;
-}
-
-/* Efeito hover */
-
-.estilo_botoes:hover {
-    box-shadow: 0px 4px 15px black;
+    width: 311px;
+    height: 627px;
+    background: url('../pacote-d013/imagens/frame-iphone.png') no-repeat;
 }
