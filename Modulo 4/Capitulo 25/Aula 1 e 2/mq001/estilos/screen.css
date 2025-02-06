@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header > h1{
+    padding: 20px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+header ul{
+    
+    background-color: brown;
+}
+
+header li{
+    padding: 5px;
+    display: inline-block;
+    background-color: yellow;
+}

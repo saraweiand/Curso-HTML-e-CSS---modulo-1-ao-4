@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    display: none;
+}
+
+article > h1{
+    text-align: center;
+}
+
+article > p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.5em;
+}
+
+article::after{
+    content: 'Criado por Sara Weiand Wust';
+}
