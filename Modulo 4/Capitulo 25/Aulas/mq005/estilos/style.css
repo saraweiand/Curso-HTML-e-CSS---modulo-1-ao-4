@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Mobile first */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 10px;
+}
+
+menu > li{
+    background-color: rgb(165, 164, 164);
+    list-style-type: none;
+    padding: 6px;
+}
+
+menu > li > a{
+    text-decoration: none;
+    color: white;
+}
