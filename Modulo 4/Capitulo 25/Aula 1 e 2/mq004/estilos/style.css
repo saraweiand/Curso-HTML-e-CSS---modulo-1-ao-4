@@ -33,10 +33,11 @@ h1{
 }
 
 img{
-    display: none;
-}
-
-img#celular{
-    display: block;
     margin: auto;
 }
+
+img#celular{display: block;}
+img#tablet{display: none;}
+img#pc{display: none;}
+img#impressora{display: none;}
+img#tv{display: none;}

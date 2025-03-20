@@ -1,3 +1,58 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+
+@media print{ /* IMPRESSÃO */
+
+    main{
+        width: 90vw;
+        text-align: center;
+    }
+    
+    main::after{
+        content: 'Impressão realizada através da aula de device breakpoints';
+        text-decoration: overline;
+    }
+
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#impressora{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* Tablet */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#celular{display: none;}
+    img#tablet{display: block;}
+    img#pc{display: none;}
+    img#impressora{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* PC */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: block;}
+    img#impressora{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){ /* GRANDES TELAS */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#impressora{display: none;}
+    img#tv{display: block;}
+}
