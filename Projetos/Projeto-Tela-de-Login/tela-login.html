@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Login</h1>
+            <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <form action="cadastro.php" method="post" autocomplete="off"></form>
+                <p>
+                    <label for="iemail">ÍCONE email</label>
+                    <input type="email" name="email" id="iemail" autocomplete="on" placeholder="seu e-mail" required>
+                </p>
+                <p>
+                    <label for="isenha">ÍCONE senha</label>
+                    <input type="password" name="senha" id="isenha" required placeholder="sua senha" minlength="8">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Esqueci a senha *ícone">
+                </p>
+        </article>
+    </main>
+</body>
+</html>
