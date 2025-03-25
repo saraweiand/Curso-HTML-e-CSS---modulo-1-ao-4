@@ -12,33 +12,39 @@ html, body{
 
 main{
     background-color: white;
-    width: 40vw;
-    height: 60vh;
-    margin: auto;
-    margin-top: 150px;
     border-radius: 10px;
+    margin: 99px;
 }
 
 div#img{
-    background-image: url(../imagens/metal.jpg);
+    background: url(../imagens/metal.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    width: auto;
-    height: 200px;
+    height: 180px;
     border-radius: 10px 10px 0px 0px;
-}
-
-article{
-    padding: 10px;
 }
 
 article > h1{
     font-size: 20px;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
-article > p{
-    font-size: 11px;
+p{
+    font-size: 10.5px;
     text-align: left;
+    padding: 5px;
+    line-height: 1.3em;
+}
+
+#article2 > p.caixas{
+    border-radius: 5px;
+    background-color: #5F2C82;
+    margin: 3px;
+    padding: 0px;
+}
+
+article > p > input{
+    border-radius: 6px;
+    padding: 5px;
 }
