@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Mobile first */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -33,18 +35,32 @@ article > h1{
 p{
     font-size: 10.5px;
     text-align: left;
-    padding: 5px;
-    line-height: 1.3em;
+    padding-left: 8px;
+    line-height: 1.4em;
 }
 
 #article2 > p.caixas{
+    display: flex;
     border-radius: 5px;
     background-color: #5F2C82;
-    margin: 3px;
-    padding: 0px;
+    margin: 5px;
+    padding-top: 3px;
+    padding-bottom: 0.8px;
+    padding-right: 2px;
+}
+
+#article2 > p > span.material-symbols-outlined{
+    padding-right: 5px;
+    color: white;
+}
+
+#artilce2 > p > span > label{
+    padding: 60px;
 }
 
 article > p > input{
     border-radius: 6px;
-    padding: 5px;
+    width: 100%;
+    padding-left: 5px;
+    background-color: #94CFCD;
 }
