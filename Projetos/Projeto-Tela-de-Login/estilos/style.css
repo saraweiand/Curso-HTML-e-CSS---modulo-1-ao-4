@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Mobile first */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,33 +14,53 @@ html, body{
 
 main{
     background-color: white;
-    width: 40vw;
-    height: 60vh;
-    margin: auto;
-    margin-top: 150px;
     border-radius: 10px;
+    margin: 99px;
 }
 
 div#img{
-    background-image: url(../imagens/metal.jpg);
+    background: url(../imagens/metal.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    width: auto;
-    height: 200px;
+    height: 180px;
     border-radius: 10px 10px 0px 0px;
-}
-
-article{
-    padding: 10px;
 }
 
 article > h1{
     font-size: 20px;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
-article > p{
-    font-size: 11px;
+p{
+    font-size: 10.5px;
     text-align: left;
+    padding-left: 8px;
+    line-height: 1.4em;
+}
+
+#article2 > p.caixas{
+    display: flex;
+    border-radius: 5px;
+    background-color: #5F2C82;
+    margin: 5px;
+    padding-top: 3px;
+    padding-bottom: 0.8px;
+    padding-right: 2px;
+}
+
+#article2 > p > span.material-symbols-outlined{
+    padding-right: 5px;
+    color: white;
+}
+
+#artilce2 > p > span > label{
+    padding: 60px;
+}
+
+article > p > input{
+    border-radius: 6px;
+    width: 100%;
+    padding-left: 5px;
+    background-color: #94CFCD;
 }

@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
     <title>Tela de Login</title>
 </head>
 <body>
     <main>
-        <div id="img"></div>
         <article>
+            <div id="img"></div>
             <h1>Login</h1>
-            <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <p id="p1">Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
         </article>
-        <article>
+        <article id="article2">
             <form action="cadastro.php" method="post" autocomplete="off"></form>
-            <p>
-                <label for="iemail">ÍCONE email</label>
+            <p class="caixas">
+                <span class="material-symbols-outlined">person<label for="iemail"></label></span>
                 <input type="email" name="email" id="iemail" autocomplete="on" placeholder="seu e-mail" required>
             </p>
-            <p>
-                <label for="isenha">ÍCONE senha</label>
+            <p class="caixas">
+                <span class="material-symbols-outlined">key<label for="isenha"></label></span>
                 <input type="password" name="senha" id="isenha" required placeholder="sua senha" minlength="8">
             </p>
-            <p>
-                <input type="submit" value="Enviar">
+            <p id="botoes">
+                <input type="submit" value="Enviar"><br>
                 <input type="submit" value="Esqueci a senha *ícone">
             </p>
         </article>
