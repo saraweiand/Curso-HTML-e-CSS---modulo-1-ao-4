@@ -1,4 +1,23 @@
-# Curso HTML e CSS - modulo 1 ao 4
- 
-Este repositório será usado para inserir as aulas do curso de "HTML e CSS do Curso em vídeo". Totalizando 160h
-<br>Nele irei inserir as aulas, aprendizados, macetes e explicações que eu aprender ao longo do curso. Assim como irei inserir os desafios e exercícios propostos pelo professor durante as aplicações das aulas.
+# 🌐 HTML e CSS - Curso Completo (Curso em Vídeo)
+
+Este repositório contém os projetos e exercícios práticos dos Módulos 1 ao 4 do curso de HTML5 e CSS3 ministrado por Gustavo Guanabara.
+
+## 🧩 Conteúdo aprendido
+
+- Estrutura básica de páginas HTML
+- Semântica HTML5
+- CSS interno, externo e inline
+- Seletores e hierarquia
+- Box Model e posicionamentos
+- Layouts com Flexbox e Grid
+- Responsividade e media queries
+
+## 🎯 Objetivo
+
+Construir páginas web bem estruturadas e com estilo moderno, seguindo boas práticas de HTML5 e CSS3.
+
+## 🧪 Tecnologias
+
+- HTML5
+- CSS3
+- VS Code
